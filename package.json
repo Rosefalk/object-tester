@@ -1,0 +1,25 @@
+{
+  "name": "object-tester",
+  "version": "1.0.0",
+  "description": "ObjectTester will test if an object (with enumarables) has been updated since last time it was tested (string conversion and equality test). For example to avoid unneeded data transfer.",
+  "main": "./dist/ObjectTester.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test": "npm run build && mocha ./dist/Tests.js"
+  },
+  "keywords": [
+    "cache",
+    "objecttester",
+    "check"
+  ],
+  "author": "Thomas Rosefalk",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
